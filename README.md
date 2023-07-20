@@ -2,9 +2,8 @@
 Getting Started
 To get started, you need to have Python installed on your machine along with the required libraries: pandas, numpy, and scikit-learn. If you don't have these libraries, you can install them using pip:
 
-bash
-Copy code
 pip install pandas numpy scikit-learn
+
 Data
 The raw data is stored in an Excel file named Liberty_Sales_2022.xls, which contains the following columns:
 
@@ -17,9 +16,14 @@ Price
 Data Exploration
 The first step is to load the data and perform some initial exploration. We read the data into a pandas DataFrame and display the first few rows to get an idea of the structure of the dataset.
 
-python
-Copy code
 import pandas as pd
+
+# Load the data from Excel
+df = pd.read_excel('/content/Liberty_Sales_2022.xls', sheet_name="RawData")
+
+# Display the first few rows of the data
+print(df.head())
+
 
 # Load the data from Excel
 df = pd.read_excel('/content/Liberty_Sales_2022.xls', sheet_name="RawData")
