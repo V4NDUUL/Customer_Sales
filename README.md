@@ -1,11 +1,4 @@
 # Customer_Sales
-Getting Started
-To get started, you need to have Python installed on your machine along with the required libraries: pandas, numpy, and scikit-learn. If you don't have these libraries, you can install them using pip:
-
-pip install pandas numpy scikit-learn
-
-Data
-The raw data is stored in an Excel file named Liberty_Sales_2022.xls, which contains the following columns:
 
 Customer
 Bill Date
@@ -19,14 +12,14 @@ The first step is to load the data and perform some initial exploration. We read
 import pandas as pd
 
 # Load the data from Excel
-df = pd.read_excel('/content/Liberty_Sales_2022.xls', sheet_name="RawData")
+df = pd.read_excel
 
 # Display the first few rows of the data
 print(df.head())
 
 
 # Load the data from Excel
-df = pd.read_excel('/content/Liberty_Sales_2022.xls', sheet_name="RawData")
+df = pd.read_excel
 
 # Display the first few rows of the data
 print(df.head())
@@ -38,16 +31,9 @@ Separating the 'Customer' column into individual locations
 Creating separate DataFrames for each customer type (location)
 Adding suffixes to each DataFrame to distinguish columns from different locations
 Customer Segmentation
-Once the data is preprocessed, we perform customer segmentation based on the different locations. The following locations are included in the analysis:
+Once the data is preprocessed, we perform customer segmentation based on the different locations. 
 
-Odessa
-Midland
-Cibolo
-Gainesville
-Williston
-Wireline YA
-Henderson
-Shreveport
+
 For each location, a separate DataFrame is created, and the suffixes are added to the columns to differentiate between locations.
 
 Merging DataFrames
